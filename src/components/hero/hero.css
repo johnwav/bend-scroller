@@ -1,0 +1,7 @@
+.container h1 {
+  font-size: 60px;
+  text-align: center;
+  font-size: clamp(2.5vw, 60px, 8vw);
+  user-select: none;
+  padding-inline: 8px;
+}

@@ -1,0 +1,41 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+#scrolling {
+  overflow: hidden;
+  position: relative;
+  --v-offset: 50px;
+  --curve-height: 150px;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    background: black;
+    width: calc(100vw + 2 * var(--v-offset));
+    height: var(--curve-height);
+    position: absolute;
+    border-radius: 50%;
+    left: calc(-1 * var(--v-offset));
+    right: calc(-1 * var(--v-offset));
+  }
+
+  &:before {
+    top: calc(-0.6 * var(--curve-height));
+  }
+
+  &:after {
+    bottom: calc(-0.6 * var(--curve-height));
+  }
+}
+
+.glide__slides {
+  display: flex;
+}
+
+.glide__slide {
+  width: initial;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
