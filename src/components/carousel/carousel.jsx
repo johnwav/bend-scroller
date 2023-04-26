@@ -37,11 +37,11 @@ const Carousel = ({ imageData }) => {
             },
             gap: 5,
           },
-          480: {
-            perView: 2,
+          580: {
+            perView: 1,
             peek: {
-              before: 100,
-              after: 40,
+              before: 70,
+              after: 60,
             },
             gap: 5,
           },
@@ -49,6 +49,7 @@ const Carousel = ({ imageData }) => {
       }).mount();
     });
   }, []);
+
 
   return (
     <section className="glide">

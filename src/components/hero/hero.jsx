@@ -17,8 +17,8 @@ const Hero = () => {
     <div className="container">
       <h1>
         Crafting timeless
-        <span className="animate__fadeIn"> {texts[counter]}</span> <br /> for
-        inspired living
+        <br />
+        <span className="animate__fadeIn change"> {texts[counter]}</span> <br />
         {console.log(counter)}
       </h1>
     </div>
